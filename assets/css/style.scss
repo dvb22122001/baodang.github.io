@@ -524,6 +524,56 @@ body {
   font-weight: 400;
   animation: fadeSlideUp 0.7s ease both;
 }
+.zoomable-project-image {
+  cursor: zoom-in;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 10px;
+}
+
+.zoomable-project-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.82);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 9999;
+}
+
+.image-lightbox.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.image-lightbox__img {
+  max-width: min(95vw, 1400px);
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+}
+
+.image-lightbox__close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
 .reveal-item {
   opacity: 0;
   transform: translateY(26px) scale(0.985);
