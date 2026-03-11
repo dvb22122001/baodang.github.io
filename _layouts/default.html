@@ -10,26 +10,29 @@
     {% include head-custom.html %}
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        {% if site.logo %}
-          <img src="{{ site.logo | relative_url }}" alt="Dang Van Bao">
-        {% endif %}
+    <div class="page-shell">
+      <div class="wrapper">
+        <header class="sidebar">
+          {% if site.logo %}
+            <img src="{{ site.logo | relative_url }}" alt="Dang Van Bao">
+          {% endif %}
 
-        <h1>{{ site.title }}</h1>
-        <div class="site-description">
-          {{ site.description }}
-        </div>
-      </header>
+          <h1>{{ site.title }}</h1>
 
-      <section>
-        {{ content }}
+          <div class="site-description">
+            {{ site.description }}
+          </div>
+        </header>
 
-        <footer class="site-footer">
-          <p>© 2026 Dang Van Bao</p>
-          <p>Research Portfolio · Machine Learning · Medical Imaging · Wearable Sensing</p>
-        </footer>
-      </section>
+        <section class="main-content">
+          {{ content }}
+
+          <footer class="site-footer">
+            <p>© 2026 Dang Van Bao</p>
+            <p>Research Portfolio · Machine Learning · Medical Imaging · Wearable Sensing</p>
+          </footer>
+        </section>
+      </div>
     </div>
   </body>
 </html>
