@@ -1,4 +1,3 @@
-
 title: "Dang Van Bao"
 
 logo: "/images/projects/picture.jpg"
@@ -12,11 +11,11 @@ description: |
   </p>
 
   <p>
-  I build practical AI systems for healthcare, with a focus on wearable sensing and rehabilitation technologies.
+  I am a researcher focusing on machine learning, medical imaging, wearable sensing, and AI-driven healthcare systems.
   </p>
 
   <p>
-  My current work explores post-stroke rehabilitation through a wearable ear device for monitoring facial muscle activity.
+  My current work explores post-stroke rehabilitation through a wearable ear device designed to monitor and evaluate facial muscle activity for post-stroke patient recovery.
   </p>
 
 show_downloads: false
