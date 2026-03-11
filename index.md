@@ -98,7 +98,7 @@ Applied Linear Regression, XGBoost, and LSTM models to forecast stock prices and
 
 <div class="award-header">
   <h3 class="award-title">Graduate Research Assistantship</h3>
-  <div class="award-date">Mar 2026</div>
+  <div class="award-date">Feb 2026</div>
 </div>
 
 <p class="award-subtitle">Department of Computer Science · University of Montana</p>
