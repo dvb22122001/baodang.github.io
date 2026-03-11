@@ -524,6 +524,30 @@ body {
   font-weight: 400;
   animation: fadeSlideUp 0.7s ease both;
 }
+.typewriter {
+  visibility: hidden;
+  position: relative;
+}
+
+.typewriter.ready {
+  visibility: visible;
+}
+
+.typewriter.typing-active::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  margin-left: 4px;
+  vertical-align: -0.12em;
+  background: rgba(255, 255, 255, 0.9);
+  animation: blinkCaret 0.8s step-end infinite;
+}
+
+@keyframes blinkCaret {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   * {
