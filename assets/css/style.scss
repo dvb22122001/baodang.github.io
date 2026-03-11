@@ -4,17 +4,16 @@
 @import "jekyll-theme-minimal";
 
 :root {
-  --bg: #f7f8fc;
+  --bg: #f5f7fb;
   --sidebar-bg-1: #0f172a;
-  --sidebar-bg-2: #134e4a;
-  --sidebar-text: #e5eef7;
+  --sidebar-bg-2: #115e59;
+  --sidebar-text: #eaf2ff;
   --main-bg: #ffffff;
   --text: #1f2937;
   --muted: #6b7280;
   --line: #e5e7eb;
   --accent: #0f766e;
-  --accent-soft: rgba(255,255,255,0.12);
-  --shadow: 0 20px 45px rgba(15, 23, 42, 0.10);
+  --shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
 }
 
 html {
@@ -24,8 +23,8 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at top left, rgba(15,118,110,0.08), transparent 28%),
-    radial-gradient(circle at bottom right, rgba(59,130,246,0.08), transparent 24%),
+    radial-gradient(circle at top left, rgba(16, 185, 129, 0.08), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.08), transparent 20%),
     var(--bg);
   color: var(--text);
   font-family: Inter, "Segoe UI", Arial, sans-serif;
@@ -51,8 +50,7 @@ body {
   top: 28px;
   padding: 28px 24px;
   border-radius: 28px;
-  background:
-    linear-gradient(160deg, var(--sidebar-bg-1), var(--sidebar-bg-2));
+  background: linear-gradient(160deg, var(--sidebar-bg-1), var(--sidebar-bg-2));
   color: var(--sidebar-text);
   box-shadow: var(--shadow);
   text-align: center;
@@ -62,30 +60,32 @@ body {
 .sidebar::before {
   content: "";
   position: absolute;
-  inset: -40% auto auto -20%;
+  top: -40px;
+  left: -30px;
   width: 220px;
   height: 220px;
-  background: rgba(255,255,255,0.08);
   border-radius: 50%;
-  filter: blur(10px);
+  background: rgba(255,255,255,0.08);
+  filter: blur(8px);
   animation: floatGlow 6s ease-in-out infinite;
 }
 
 .sidebar::after {
   content: "";
   position: absolute;
-  right: -40px;
-  bottom: -40px;
+  right: -30px;
+  bottom: -50px;
   width: 180px;
   height: 180px;
-  background: rgba(255,255,255,0.06);
   border-radius: 50%;
-  filter: blur(8px);
+  background: rgba(255,255,255,0.06);
+  filter: blur(10px);
+  animation: floatGlow 7s ease-in-out infinite reverse;
 }
 
 @keyframes floatGlow {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(12px); }
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(12px) translateX(6px); }
 }
 
 .sidebar img {
@@ -104,7 +104,7 @@ body {
 .sidebar h1 {
   position: relative;
   z-index: 1;
-  margin-bottom: 14px;
+  margin: 0 0 14px;
   color: #ffffff;
   font-size: 30px;
   line-height: 1.15;
@@ -127,10 +127,10 @@ body {
 
 .site-description p:first-child a {
   display: inline-block;
-  margin: 4px 4px;
+  margin: 4px;
   padding: 7px 12px;
   border-radius: 999px;
-  background: var(--accent-soft);
+  background: rgba(255,255,255,0.12);
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
@@ -155,22 +155,15 @@ body {
   box-shadow: var(--shadow);
 }
 
-.main-content h1,
-.main-content h2,
-.main-content h3 {
-  color: var(--text);
-  letter-spacing: -0.01em;
-}
-
 .main-content h2 {
-  margin-top: 28px;
+  margin-top: 30px;
   padding-bottom: 8px;
   border-bottom: 2px solid var(--line);
 }
 
 .main-content h3 {
-  margin-top: 24px;
-  margin-bottom: 10px;
+  margin-top: 26px;
+  margin-bottom: 8px;
 }
 
 .main-content p,
@@ -195,19 +188,20 @@ body {
   margin-bottom: 10px;
 }
 
-.site-footer {
-  margin-top: 42px;
-  padding-top: 18px;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 14px;
-  text-align: center;
-  clear: both;
+.project-date {
+  display: inline-block;
+  margin: 2px 0 10px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #ecfeff;
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .project-links {
   margin-top: 10px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .project-links a {
@@ -225,6 +219,18 @@ body {
 .project-links a:hover {
   text-decoration: none;
   opacity: 0.92;
+}
+
+.site-footer {
+  display: block;
+  width: 100%;
+  margin-top: 42px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+  clear: both;
 }
 
 @media screen and (max-width: 960px) {
