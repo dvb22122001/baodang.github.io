@@ -81,7 +81,7 @@ Contributed to a Vietnamese NLP model and TTS integration for a voice bot tailor
 
 <div class="project-header">
   <h3 class="project-title">Vinamilk Stock Price Forecasting and Investment Decision Support</h3>
-  <div class="project-date">Dec 2023</div>
+  <div class="project-date">July 2023</div>
 </div>
 
 <p class="project-subtitle">Linear Regression · XGBoost · LSTM</p>
