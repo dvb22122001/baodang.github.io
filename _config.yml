@@ -3,20 +3,19 @@ title: "Dang Van Bao"
 logo: "/images/projects/picture.jpg"
 
 description: |
-  <p align="center">
+  <p align="center" class="typewriter">
     <a href="resume.pdf">CV</a>
     <a href="mailto:dvb22122001@gmail.com">Email</a>
     <a href="https://www.linkedin.com/in/bao-dang-595773226/">LinkedIn</a>
     <a href="https://github.com/dvb22122001">GitHub</a>
   </p>
 
-
-  <p>
-  I build practical AI systems for healthcare, with a focus on wearable sensing, medical imaging, and rehabilitation technologies.
+  <p class="typewriter">
+    I build practical AI systems for healthcare, with a focus on wearable sensing, medical imaging, and rehabilitation technologies.
   </p>
 
-  <p>
-  My current work explores post-stroke rehabilitation through a wearable ear device designed to monitor and evaluate facial muscle activity for patient recovery.
+  <p class="typewriter">
+    My current work explores post-stroke rehabilitation through a wearable ear device designed to monitor and evaluate facial muscle activity for patient recovery.
   </p>
 
 show_downloads: false
