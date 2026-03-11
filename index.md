@@ -31,6 +31,11 @@ Explored CNN-based interpolation and SRGAN super-resolution methods to reconstru
 
 Developed AI models to assess bowel wall thickness in pediatric inflammatory bowel disease using intestinal ultrasound images. Built a user-friendly C# interface for healthcare professionals in clinical settings.
 
+<div class="project-links">
+  <a href="https://pubmed.ncbi.nlm.nih.gov/40052532/">PubMed</a>
+  <a href="https://doi.org/10.1093/ecco-jcc/jjaf037">DOI</a>
+</div>
+
 ### Breast Tumor Classification from Ultrasound Images
 
 <p align="center">
