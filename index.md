@@ -149,3 +149,8 @@ Recognized for the project <em>Forecasting Sales Trends and Analyzing Customer B
 <p class="award-subtitle">HACKATHON 2020 · Ho Chi Minh City University of Technology and Education</p>
 
 Recognized for the project <em>Time Management Application for Students and Lecturers</em>.
+
+<div class="award-header">
+  <h3 class="award-title">IELTS 7.0</h3>
+
+</div>
