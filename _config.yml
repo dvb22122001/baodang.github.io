@@ -1,10 +1,10 @@
-title: <p align="center"> Dang Van Bao </p>
+title: <p align="center">Dang Van Bao</p>
 
 logo: "/images/picture.png?raw=true"
 
 description: |
   <p align="center">
-    <a href="pdf/resume.pdf">CV</a> |
+    <a href="resume.pdf">CV</a> |
     <a href="mailto:dvb22122001@gmail.com">Email</a> |
     <a href="https://www.linkedin.com/in/bao-dang-595773226/">LinkedIn</a> |
     <a href="https://github.com/dvb22122001">GitHub</a>
@@ -14,7 +14,7 @@ description: |
   I am a researcher focusing on machine learning, medical imaging, wearable sensing, and AI-driven healthcare systems.
   <br><br>
   My recent work spans ultrasound-based clinical decision support, post-stroke rehabilitation systems, fall detection using IMU sensors, and applied predictive models for real-world healthcare applications.
-  <br><br>
   </p>
 
+show_downloads: false
 theme: jekyll-theme-minimal
