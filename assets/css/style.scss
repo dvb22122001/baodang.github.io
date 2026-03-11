@@ -207,26 +207,38 @@ body {
 
 .project-header {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 16px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--line);
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+  margin-bottom: 8px;
 }
 
 .project-title {
   margin: 0;
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 800;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
   color: var(--text);
+  position: relative;
+  padding-left: 14px;
+}
+
+.project-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 6px;
+  height: calc(100% - 12px);
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--accent), #14b8a6);
 }
 
 .project-date {
-  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
   margin: 0;
   padding: 6px 12px;
   border-radius: 999px;
@@ -238,63 +250,18 @@ body {
 }
 
 .project-subtitle {
-  margin: 0 0 14px;
+  margin: 0 0 14px 14px;
   color: var(--muted);
   font-size: 15px;
-}
-
-.project-links {
-  margin-top: 10px;
-  margin-bottom: 16px;
-}
-
-.project-links a {
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 8px;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: #ecfeff;
-  color: var(--accent);
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.project-links a:hover {
-  text-decoration: none;
-  opacity: 0.92;
-}
-
-@media screen and (max-width: 960px) {
-  .wrapper {
-    width: auto;
-    display: block;
-  }
-
-  .sidebar,
-  .main-content {
-    width: auto;
-  }
-
-  .sidebar {
-    position: static;
-    margin-bottom: 22px;
-  }
-
-  .main-content img {
-    width: 100% !important;
-    margin-bottom: 12px;
-  }
+  font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {
-  .project-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+  .project-title {
+    font-size: 28px;
   }
 
-  .project-title {
-    font-size: 26px;
+  .project-date {
+    font-size: 12px;
   }
 }
