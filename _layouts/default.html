@@ -8,6 +8,40 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     {% include head-custom.html %}
   </head>
+  <script>
+document.addEventListener("DOMContentLoaded", async () => {
+  const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+  const blocks = Array.from(document.querySelectorAll(".typewriter"));
+
+  for (const block of blocks) {
+    const original = block.innerHTML.trim();
+    block.innerHTML = "";
+    block.classList.add("ready", "typing-active");
+
+    let output = "";
+    let i = 0;
+
+    while (i < original.length) {
+      if (original[i] === "<") {
+        const closeIndex = original.indexOf(">", i);
+        if (closeIndex === -1) break;
+        output += original.slice(i, closeIndex + 1);
+        i = closeIndex + 1;
+        block.innerHTML = output;
+      } else {
+        output += original[i];
+        i += 1;
+        block.innerHTML = output;
+        await sleep(16);
+      }
+    }
+
+    block.innerHTML = output;
+    block.classList.remove("typing-active");
+    await sleep(180);
+  }
+});
+</script>
   <body>
     <div class="page-shell">
       <div class="wrapper">
