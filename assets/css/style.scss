@@ -147,6 +147,23 @@ body {
   font-size: 15px;
 }
 
+.sidebar-footer {
+  position: relative;
+  z-index: 1;
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255,255,255,0.18);
+  color: #d8e7f3;
+  font-size: 13px;
+  text-align: left;
+}
+
+.sidebar-footer p {
+  margin: 0 0 8px;
+  color: #d8e7f3;
+  line-height: 1.6;
+}
+
 .main-content {
   width: 760px;
   padding: 30px 34px;
@@ -188,77 +205,7 @@ body {
   margin-bottom: 10px;
 }
 
-.project-date {
-  display: inline-block;
-  margin: 2px 0 10px;
-  padding: 4px 10px;
-  border-radius: 999px;
-  background: #ecfeff;
-  color: var(--accent);
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.project-links {
-  margin-top: 10px;
-  margin-bottom: 16px;
-}
-
-.project-links a {
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 8px;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: #ecfeff;
-  color: var(--accent);
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.project-links a:hover {
-  text-decoration: none;
-  opacity: 0.92;
-}
-
-
-@media screen and (max-width: 960px) {
-  .wrapper {
-    width: auto;
-    display: block;
-  }
-
-  .sidebar,
-  .main-content {
-    width: auto;
-  }
-
-  .sidebar {
-    position: static;
-    margin-bottom: 22px;
-  }
-
-  .main-content img {
-    width: 100% !important;
-    margin-bottom: 12px;
-  }
-  .sidebar-footer {
-  position: relative;
-  z-index: 1;
-  margin-top: 28px;
-  padding-top: 18px;
-  border-top: 1px solid rgba(255,255,255,0.18);
-  color: #d8e7f3;
-  font-size: 13px;
-  text-align: left;
-}
-
-.sidebar-footer p {
-  margin: 0 0 8px;
-  color: #d8e7f3;
-  line-height: 1.6;
-}
-  .project-header {
+.project-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -296,6 +243,50 @@ body {
   font-size: 15px;
 }
 
+.project-links {
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #ecfeff;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.project-links a:hover {
+  text-decoration: none;
+  opacity: 0.92;
+}
+
+@media screen and (max-width: 960px) {
+  .wrapper {
+    width: auto;
+    display: block;
+  }
+
+  .sidebar,
+  .main-content {
+    width: auto;
+  }
+
+  .sidebar {
+    position: static;
+    margin-bottom: 22px;
+  }
+
+  .main-content img {
+    width: 100% !important;
+    margin-bottom: 12px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .project-header {
     flex-direction: column;
@@ -306,5 +297,4 @@ body {
   .project-title {
     font-size: 26px;
   }
-}
 }
