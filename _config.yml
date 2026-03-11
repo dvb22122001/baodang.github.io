@@ -1,6 +1,20 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
-google_analytics:
+title: <p align="center"> Dang Van Bao </p>
+
+logo: "/images/picture.png?raw=true"
+
+description: |
+  <p align="center">
+    <a href="pdf/resume.pdf">CV</a> |
+    <a href="mailto:dvb22122001@gmail.com">Email</a> |
+    <a href="https://www.linkedin.com/in/bao-dang-595773226/">LinkedIn</a> |
+    <a href="https://github.com/dvb22122001">GitHub</a>
+  </p>
+
+  <p align="justify">
+  I am a researcher focusing on machine learning, medical imaging, wearable sensing, and AI-driven healthcare systems.
+  <br><br>
+  My recent work spans ultrasound-based clinical decision support, post-stroke rehabilitation systems, fall detection using IMU sensors, and applied predictive models for real-world healthcare applications.
+  <br><br>
+  </p>
+
 theme: jekyll-theme-minimal
