@@ -72,7 +72,7 @@ Used statistical texture analysis and a neuro-fuzzy model to classify benign and
 
 <div class="project-header">
   <h3 class="project-title">Vietnamese Voice Bot for Financial Services</h3>
-  <div class="project-date">Jan 2023 – Nov 2023</div>
+  <div class="project-date">Nov 2023</div>
 </div>
 
 <p class="project-subtitle">NLP · TTS · Scrum · Business Analysis</p>
