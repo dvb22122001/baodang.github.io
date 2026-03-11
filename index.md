@@ -93,3 +93,59 @@ Contributed to a Vietnamese NLP model and TTS integration for a voice bot tailor
 </p>
 
 Applied Linear Regression, XGBoost, and LSTM models to forecast stock prices and compared their performance using RMSE, MAE, and R-squared.
+
+## Honors & Awards
+
+<div class="award-header">
+  <h3 class="award-title">Consolation Prize</h3>
+  <div class="award-date">Mar 2024</div>
+</div>
+
+<p class="award-subtitle">Festival of Undergraduate Research and Creative Activities · University of Alberta</p>
+
+Recognized for the project <em>Classification of Breast Tumors on Ultrasound Images Based on Texture Analysis</em>.
+
+<div class="award-header">
+  <h3 class="award-title">SEED Scholarship</h3>
+  <div class="award-date">Jun 2023</div>
+</div>
+
+<p class="award-subtitle">Canadian Government Sponsored</p>
+
+Awarded a 100% scholarship valued at <strong>$15,900</strong> to support eight months of undergraduate research.
+
+<div class="award-header">
+  <h3 class="award-title">Top 8</h3>
+  <div class="award-date">Dec 2022</div>
+</div>
+
+<p class="award-subtitle">START UP DEMODAY · International University — VNU HCMC</p>
+
+Recognized for the project <em>Psychological Counseling Application</em>.
+
+<div class="award-header">
+  <h3 class="award-title">Top 3</h3>
+  <div class="award-date">Dec 2021</div>
+</div>
+
+<p class="award-subtitle">GREENOVATOR HACKATHON · Bosch Vietnam</p>
+
+Awarded for the project <em>Air Quality Forecasting Application</em>.
+
+<div class="award-header">
+  <h3 class="award-title">Top 10</h3>
+  <div class="award-date">Jun 2020</div>
+</div>
+
+<p class="award-subtitle">BUSINESS INTELLIGENCE SEASON 5 · University of Economics and Law</p>
+
+Recognized for the project <em>Forecasting Sales Trends and Analyzing Customer Behavior</em>.
+
+<div class="award-header">
+  <h3 class="award-title">Consolation Prize</h3>
+  <div class="award-date">Dec 2019</div>
+</div>
+
+<p class="award-subtitle">HACKATHON 2020 · Ho Chi Minh City University of Technology and Education</p>
+
+Recognized for the project <em>Time Management Application for Students and Lecturers</em>.
